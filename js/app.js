@@ -13,7 +13,7 @@ const lista = [
 
 
 
-const listaWrapperEl = document.querySelector('.lista_wrapper')
+const listaWrapperEl = document.querySelectorAll('.lista_wrapper')
 // LO SVUOTO
 // listaWrapperEl.innerHTML = ""
 
@@ -29,7 +29,23 @@ for (let i = 0; i < lista.length; i++) {
     listaWrapperEl[0].append(li);
 }
 
+// CICLO WHILE
+let index = 0;
 
+while (index < lista.length) {
+    // CREO IL LI
+    const li = document.createElement('li');
+
+    // INSERISCO IL CONTENUTO DEL LI
+    li.innerHTML = lista[index];
+
+    // APPENDO IL CONTENUTO NELL' UL
+    listaWrapperEl[1].append(li);
+
+    // AUMENTO L'INDICE
+    index++;
+
+}
 
 
 
