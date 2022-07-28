@@ -19,9 +19,10 @@ for (let i = 0; i < lista.length; i++) {
 
     // INSERISCO IL CONTENUTO DEL LI
     li.innerHTML = lista[i];
+    // listaWrapperEl.innerHTML += '<li>${prodotto}</li>'
 
     // AGGIUNGO IL LI CREATO ALL UL
-    listaWrapperEl.appendChild(li) ;
+    listaWrapperEl.append(li) ;
 }
 
 // CICLO WHILE
@@ -35,7 +36,7 @@ while (index < lista.length) {
     li.innerHTML = lista[index];
 
     // APPENDO IL CONTENUTO NELL' UL
-    listaWrapper2El.appendChild(li);
+    listaWrapper2El.append(li);
 
     // AUMENTO L'INDICE
     index++;
